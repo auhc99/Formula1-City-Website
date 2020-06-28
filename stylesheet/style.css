@@ -1,1 +1,74 @@
-/* Empty for now */
+/* Custom Fonts --------------------------------- */
+@import url('https://fonts.googleapis.com/css?family=Anton');
+
+
+/* Common CSS ----------------------------------- */
+
+* {
+    box-sizing: border-box;
+}
+
+/* Body CSS ------------------------------------ */
+body{
+    
+}
+
+h1{
+    font-family: Arial, Helvetica,'Anton', sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 2em;
+    color: black;
+}
+
+h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    font-size: 20px;;
+    color: black;
+}
+
+h3{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    font-size: 17px;;
+    color: black;
+}
+
+p{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 15px;;
+    color: black;
+}
+
+
+/* Header CSS ------------------------------------------------------- */
+
+
+
+
+/* Body of page 1: Index.html CSS ----------------------------------- */
+
+
+
+/* Body of page 2: attractionsandevents.html CSS -------------------- */
+
+
+
+/* Body of page 3: informationandservices.html CSS ------------------ */
+
+
+
+/* Footer CSS ------------------------------------------------------- */
+
+
+
+
