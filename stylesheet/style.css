@@ -146,6 +146,11 @@ head {
     width: 50%;
 }
 
+#MainContents {
+	margin: auto;
+	text-align: center;
+}
+
 /* attractionsandevents.html formatting */
 
 	/* Desktop Version */
@@ -213,11 +218,15 @@ div.Attraction a {
 
 /* informationandservices.html formatting --------------- */
 
+	/* Desktop Version */
+@media screen and (min-width: 1490px) {
 #Map {
 	margin: auto;
 	text-align: center;
     float: left;
     width: 35%;
+	padding-top: 5%;
+	padding-left: 1%;
 }
 
 #Information {
@@ -229,6 +238,24 @@ div.Attraction a {
 	text-align: center;
     margin-left: 35%;
 }
+}
+
+	/* Phone Version */
+@media screen and (max-width: 1490px) {
+#Map {
+	margin: auto;
+	text-align: center;
+	margin-left: 20%;
+	width: 60%;
+}
+#Information {
+	text-align: center;
+}
+#Services {
+	text-align: center;
+}
+}
+	/* Other */
 
 
 
