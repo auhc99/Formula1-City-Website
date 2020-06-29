@@ -1,6 +1,6 @@
 <<<<<<< HEAD
 
-/* Custom Fonts --------------------------------- */
+/* Custom Fonts -------------------------------- */
 @import url('https://fonts.googleapis.com/css?family=Anton');
 
 @font-face {
@@ -42,7 +42,7 @@ font-weight: normal;
 src: local('Coolvetica Regular Italic'), url('coolvetica rg it.woff') format('woff');
 }
 
-/* Common CSS ----------------------------------- */
+/* Common CSS -------------------------------- */
 
 * {
     box-sizing: border-box;
@@ -85,13 +85,13 @@ src: local('Coolvetica Regular Italic'), url('coolvetica rg it.woff') format('wo
 		align: center;
  }
 
-/* Body CSS --------------------------------------------- */
+/* Body CSS -------------------------------- */
 body{
     background-color: white;
 }
 
 
-/* Header CSS ------------------------------------------- */
+/* Header CSS -------------------------------- */
 
 header {
 		margin: auto;
@@ -115,32 +115,43 @@ head {
 
 /* Index.html formatting -------------------------------- */
 
-/* slideshow  */
+	/* slideshow  */
 
 @keyframes slideshow {
 	10% {left: 0;}
 	30% {left: 0;}
-	50% {left: -100%;}
-	70% {left: -100%;}
-	90% {left: -200%;}
-        100% {left: -200%;}
+	50% {left: -49em;}
+	70% {left: -49em;}
+	90% {left: -98em;}
+	100% {left: -98em;}
 }
 
 #SlideshowAndMap {overflow:hidden; width:50%;margin:5px auto; border: 5px solid transparent;border-radius: 10px;}
-#SlideshowAndMap figure img {width:780px;height:500px;float:left;}
-#SlideshowAndMap figure {position:relative;width:300%;margin:0;left:0;text-align:left;animation:10s slideshow infinite}
-
-@media screen and (max-width: 767px) {#SlideshowAndMap {overflow: hidden; width: 100%; margin: 0 auto;}}
-
-
-#Welcome{
-    text-align: center;
-}
+#SlideshowAndMap figure img {width:780px;height:470px;float:left; border-radius: 10px;}
+#SlideshowAndMap figure {position:relative;width:600%;margin:0;left:0;text-align:left;animation:10s slideshow infinite}
 
 .AttEntsImg{
     width: 33%;
     height: 450px;
 }
+
+@media screen and (max-width: 767px) {
+	#SlideshowAndMap {
+		overflow: hidden; 
+		width: 100%; 
+		margin: 0 auto;}
+
+	.AttEntsImg{
+    width: 100%;
+    height: 250px;
+}	
+		}
+
+	/*other*/
+#Welcome{
+    text-align: center;
+}
+
 
 #InfoServeImg{
     width: 50%;
@@ -151,7 +162,17 @@ head {
 	text-align: center;
 }
 
-/* attractionsandevents.html formatting */
+#AttractionsAndEvents {
+	margin: auto;
+	text-align: center;
+}
+
+#InformationAndServices {
+	margin: auto;
+	text-align: center;
+}
+
+/* attractionsandevents.html formatting -------------------------------- */
 
 	/* Desktop Version */
 @media screen and (min-width: 1490px) {
@@ -216,7 +237,7 @@ div.Attraction a {
 }
 
 
-/* informationandservices.html formatting --------------- */
+/* informationandservices.html formatting -------------------------------- */
 
 	/* Desktop Version */
 @media screen and (min-width: 1490px) {
@@ -259,7 +280,7 @@ div.Attraction a {
 
 
 
-/* Footer Formatting ------------------------------------ */
+/* Footer Formatting -------------------------------- */
 
 div#SocialFooter {
 		border-top-style: solid;
