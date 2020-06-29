@@ -1,8 +1,8 @@
 <<<<<<< HEAD
-/* Empty for now */
 
+/* Custom Fonts --------------------------------- */
+@import url('https://fonts.googleapis.com/css?family=Anton');
 
-/* Font descriptions */
 @font-face {
 font-family: 'Coolvetica Compressed Regular';
 font-style: normal;
@@ -42,82 +42,54 @@ font-weight: normal;
 src: local('Coolvetica Regular Italic'), url('coolvetica rg it.woff') format('woff');
 }
 
-/* Page non-specific descriptions */
- h2 {
-		font-family: 'Coolvetica Regular';
-		letter-spacing: .5px;
- }
- 
- p {
-		font-family: 'Coolvetica Regular';
-		letter-spacing: .5px;
- }
- 
- address {
-		font-family: 'Coolvetica Regular';
-		letter-spacing: .5px; 
-		align: center;
- }
-
- 
-	/* Header Formatting */
-header {
-		margin: center;
-		background-color: red;
-}
-	
-#Logo {
-		margin: center;
-		text-align: center;
-		height: 5em;
-	
-}
- 
-	/* Footer Formatting*/
-div#SocialFooter {
-		margin: center;
-		text-align: center;
-		background-color: red;
-}
-
-#FBLOGO {
-	margin: auto;
-	height: 5em;
-	width: 5em;
- }
- 
- #INSTALOGO {
-	margin: auto;
-	height: 5em;
-	width: 5em;
- }
-
-div#InfoFooter {
-	margin: auto;
-	text-align: center;
-	background-color: red
-}
- 
- 
- 
- /* Page specific descriptions */
- 
-=======
-/* Custom Fonts --------------------------------- */
-@import url('https://fonts.googleapis.com/css?family=Anton');
-
-
 /* Common CSS ----------------------------------- */
 
 * {
     box-sizing: border-box;
 }
 
+ h1 {
+		font-family: 'Coolvetica Regular';
+		letter-spacing: .5px;
+		font size: 23px
+ }
+ 
+ h2 {
+		font-family: 'Coolvetica Regular';
+		letter-spacing: .5px;
+		font-size: 20px
+ }
+ 
+ h3 {
+		font-family: 'Coolvetica Regular';
+		letter-spacing: .5px;
+		font-size: 17px
+ }
+ 
+ p {
+		font-family: 'Coolvetica Regular';
+		letter-spacing: .5px;
+		font-size: 15px
+ }
+ 
+ a {
+		font-family: 'Coolvetica Regular';
+		letter-spacing: .5px;
+		font-size: 15px;
+ }
+ 
+ address {
+		font-family: 'Coolvetica Regular';
+		letter-spacing: .5px;
+		font-size: 15px		
+		align: center;
+ }
+
 /* Body CSS ------------------------------------ */
 body{
-    
+    background-color: white;
 }
-
+/* - TEMP COMMENT 
 h1{
     font-family: Arial, Helvetica,'Anton', sans-serif;
     font-style: normal;
@@ -153,12 +125,27 @@ p{
     font-size: 15px;;
     color: black;
 }
-
+*/
 
 /* Header CSS ------------------------------------------------------- */
 
+header {
+		margin: auto;
+		text-align: center;
+		border-bottom-style: solid;
+		border-bottom-color: #FFD500;
+		background-color: #ff2800;
+}
 
+head {
+	margin: auto;
+	background-color: #ff2800;
+}
 
+#logo {
+	height: 5em;
+	
+}
 
 /* Body of page 1: Index.html CSS ----------------------------------- */
 
@@ -166,14 +153,112 @@ p{
 
 /* Body of page 2: attractionsandevents.html CSS -------------------- */
 
+	/* Desktop Version */
+@media screen and (min-width: 1490px) {
+.AttractionBox {
+	 display: grid;
+	 grid-row-gap: 25px;
+	 text-align: center;
+	 margin-top: 25px;
+	 margin-bottom: 25px;
+}
 
+#Attraction1{
+	grid-column-start: 1;
+	grid-column-end: 2;
+}
+
+#Attraction2{
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
+
+#Attraction3{
+	grid-column-start: 3;
+	grid-column-end: 4;
+}
+}
+
+	/* Phone Version */
+@media screen and (max-width: 1490px) {
+.AttractionBox {
+	 text-align: center;
+	 margin-top: 25px;
+	 margin-bottom: 25px;
+}
+
+.Attraction{
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+}
+
+
+
+	/* Other */
+.AttImg {
+	width: 500px;
+}
+	
+div.Attraction a {
+	border-style: solid;
+	border-radius: 5px;
+	border-color: black;
+	padding: 4px;
+	
+}
+
+#Events {
+	border-top-style: solid;
+	border-top-color: yellow;
+	text-align: center;
+}
 
 /* Body of page 3: informationandservices.html CSS ------------------ */
 
+#Map {
+	margin: auto;
+	text-align: center;
+}
 
+#Information {
+	text-align: center;
+}
+
+#Services {
+	text-align: center;
+}
 
 /* Footer CSS ------------------------------------------------------- */
+	/* Footer Formatting*/
+div#SocialFooter {
+		border-top-style: solid;
+		border-top-color: #FFD500;
+		margin: center;
+		text-align: center;
+		background-color: #ff2800;
+}
 
+#FBLOGO {
+	margin: center;
+	margin-top: 10px;
+	height: 2.5em;
+	width: 2.5em;
+ }
+ 
+ #INSTALOGO {
+	margin: center;
+	margin-top: 10px;
+	height: 2.5em;
+	width: 2.5em;
+ }
+
+div#InfoFooter {
+	margin: auto;
+	text-align: center;
+	background-color:  #ff2800;
+}
 
 
 
