@@ -85,52 +85,17 @@ src: local('Coolvetica Regular Italic'), url('coolvetica rg it.woff') format('wo
 		align: center;
  }
 
-/* Body CSS ------------------------------------ */
+/* Body CSS --------------------------------------------- */
 body{
     background-color: white;
 }
-/* - TEMP COMMENT 
-h1{
-    font-family: Arial, Helvetica,'Anton', sans-serif;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: normal;
-    font-size: 2em;
-    color: black;
-}
 
-h2{
-    font-family: 'Times New Roman', Times, serif;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: bold;
-    font-size: 20px;;
-    color: black;
-}
 
-h3{
-    font-family: 'Times New Roman', Times, serif;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: bold;
-    font-size: 17px;;
-    color: black;
-}
-
-p{
-    font-family: 'Times New Roman', Times, serif;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: normal;
-    font-size: 15px;;
-    color: black;
-}
-*/
-
-/* Header CSS ------------------------------------------------------- */
+/* Header CSS ------------------------------------------- */
 
 header {
 		margin: auto;
+                margin-bottom: 10px;
 		text-align: center;
 		border-bottom-style: solid;
 		border-bottom-color: #FFD500;
@@ -147,11 +112,41 @@ head {
 	
 }
 
-/* Body of page 1: Index.html CSS ----------------------------------- */
+
+/* Index.html formatting -------------------------------- */
+
+/* slideshow  */
+
+@keyframes slideshow {
+	10% {left: 0;}
+	30% {left: 0;}
+	50% {left: -100%;}
+	70% {left: -100%;}
+	90% {left: -200%;}
+        100% {left: -200%;}
+}
+
+#SlideshowAndMap {overflow:hidden; width:50%;margin:5px auto; border: 5px solid transparent;border-radius: 10px;}
+#SlideshowAndMap figure img {width:780px;height:500px;float:left;}
+#SlideshowAndMap figure {position:relative;width:300%;margin:0;left:0;text-align:left;animation:10s slideshow infinite}
+
+@media screen and (max-width: 767px) {#SlideshowAndMap {overflow: hidden; width: 100%; margin: 0 auto;}}
 
 
+#Welcome{
+    text-align: center;
+}
 
-/* Body of page 2: attractionsandevents.html CSS -------------------- */
+.AttEntsImg{
+    width: 33%;
+    height: 450px;
+}
+
+#InfoServeImg{
+    width: 50%;
+}
+
+/* attractionsandevents.html formatting */
 
 	/* Desktop Version */
 @media screen and (min-width: 1490px) {
@@ -215,23 +210,30 @@ div.Attraction a {
 	text-align: center;
 }
 
-/* Body of page 3: informationandservices.html CSS ------------------ */
+
+/* informationandservices.html formatting --------------- */
 
 #Map {
 	margin: auto;
 	text-align: center;
+    float: left;
+    width: 35%;
 }
 
 #Information {
 	text-align: center;
+    margin-left: 35%;
 }
 
 #Services {
 	text-align: center;
+    margin-left: 35%;
 }
 
-/* Footer CSS ------------------------------------------------------- */
-	/* Footer Formatting*/
+
+
+/* Footer Formatting ------------------------------------ */
+
 div#SocialFooter {
 		border-top-style: solid;
 		border-top-color: #FFD500;
