@@ -218,6 +218,10 @@ div.Attraction a {
 
 /* informationandservices.html formatting --------------- */
 
+ul{
+    list-style-type: none;
+}
+
 	/* Desktop Version */
 @media screen and (min-width: 1490px) {
 #Map {
