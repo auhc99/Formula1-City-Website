@@ -9,6 +9,10 @@
         <title>FORMULA1-CITY THEME PARK: Information and Services</title>
 		<link rel="icon" type="image/ico" href="ICONLOGOGOESHERE">
 		<link rel="stylesheet" type="text/css" href="stylesheet/style.css">
+        <!-- DY's changes start here -->
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <link rel="stylesheet" type="text/css" href="stylesheet/navbar.css">
+        <!-- DY's changes end here -->
     </head>
     
     
@@ -16,11 +20,20 @@
     
     <body>
 
-        <header>
-            <a href="index.html">
-				<img id="Logo" src="images/Logo.PNG" alt="F1 City Logo">
-			</a>
-        </header>
+        <!-- DY's changes start here -->
+        <nav>
+            <input type = "checkbox" id = "check">
+            <label for = "check" class = "checkbtn">
+                <i class = "fas fa-bars"></i>
+            </label>
+            <a href = "index.html" class = "logo"><img src = "images/Logo.PNG" alt = "F1 City Logo"></a>
+            <ul>
+                <li><a href = "index.html">Home</a></li>
+                <li><a href = "attractionsandevents.html">Attractions</a></li>
+                <li><a href = "informationandservices.html">Information</a></li>
+            </ul>
+        </nav>
+        <!-- DY's changes end here -->
         
         <div id="ServicePageImage">
             <img id="Map" src="images/map1.jpg" alt="F1 City Map Image">
