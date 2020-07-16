@@ -10,10 +10,10 @@
         <meta name="description" content="Welcome to the Formula1-City Theme Park">
 		<link rel="icon" type="image/png" href="images/Logo.PNG">
 		<link rel="stylesheet" type="text/css" href="stylesheet/style.css">
-        <!-- DY's changes start here -->
+        <!-- Changes start here -->
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
         <link rel="stylesheet" type="text/css" href="stylesheet/navbar.css">
-        <!-- DY's changes end here -->
+        <!-- Changes end here -->
     </head>
     
     
@@ -21,7 +21,7 @@
     
     <body>
         
-        <!-- DY's changes start here -->
+        <!-- Changes start here -->
         <nav>
             <input type = "checkbox" id = "check">
             <label for = "check" class = "checkbtn">
@@ -35,7 +35,7 @@
             </ul>
         </nav>
             <section></section>
-        <!-- DY's changes end here -->
+        <!-- Changes end here -->
         
         <div id="SlideshowAndMap">
             <figure>
@@ -47,25 +47,52 @@
 				Welcome to the turbo-charged world of F1 here at Formula 1 City!
 			</h2>
         </div>
-        
-        <div id="mainContents">
+      
+        <!-- Changes start here -->
+        <div id="MainContents">
+
+            <h2> Attractions and Events Information </h2> 
             <div id="AttractionsAndEvents">
-                <h2> Attractions and Events Information </h2> 
                 <a href="attractionsandevents.html">
-                    <img class="AttEntsImg" src="images/ds1.jpg" alt="Press for attractions and events"> 
-                    <img class="AttEntsImg" src="images/gk1.jpg" alt="Press for attractions and events">
-                    <img class="AttEntsImg" src="images/ms1.jpg" alt="Press for attractions and events">
+                    <div class="row">
+                        <div class="column">
+                          <img src="images/ds1.jpg" class="image">
+                          <div class="overlay">
+                          <div class="text">Click to find out more about our attractions and events</div>
+                        </div>
+                        </div>
+                      
+                        <div class="column">
+                          <img src="images/gk1.jpg" class="image">
+                          <div class="overlay">
+                          <div class="text">Click to find out more about our attractions and events</div>
+                        </div>
+                        </div>
+                      
+                        <div class="column">
+                          <img src="images/ms1.jpg" class="image">
+                          <div class="overlay">
+                          <div class="text">Click to find out more about our attractions and events</div>
+                        </div>
+                        </div>
+                      </div>
                 </a>
             </div>
 
+            <h2> Information and Services </h2> 
             <div id="InformationAndServices">
-                <h2> Information and Services </h2> 
                 <a href="informationandservices.html">
-                    <img id="InfoServeImg" src="images/dn1.jpg" alt="Press for information and services"> 
+                    <div class="container">
+                        <img id="InfoServeImg" src="images/dn1.jpg" alt="Press for information and services">
+                        <div class="overlay">
+                        <div class="text">Click to find out more about our information and services</div>
+                      </div>
+                      </div>
                 </a>
             </div>
         </div>
-        
+        <!-- Changes end here -->
+      
         <footer>
             
             <div id="SocialFooter">
