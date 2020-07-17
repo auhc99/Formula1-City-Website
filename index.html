@@ -12,7 +12,7 @@
 		<link rel="stylesheet" type="text/css" href="stylesheet/style.css">
         <!-- Changes start here -->
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-        <link rel="stylesheet" type="text/css" href="stylesheet/navbar.css">
+        <link rel="stylesheet" type="text/css" href="stylesheet/elements.css">
         <!-- Changes end here -->
     </head>
     
@@ -21,7 +21,8 @@
     
     <body>
         
-        <!-- Changes start here -->
+        <!-- THIS IS THE NAVIGATION MENU -->
+        <div id = "page-container">
         <nav>
             <input type = "checkbox" id = "check">
             <label for = "check" class = "checkbtn">
@@ -34,10 +35,10 @@
                 <li><a href = "informationandservices.html">Information</a></li>
             </ul>
         </nav>
-            <section></section>
-        <!-- Changes end here -->
         
-        <div id="SlideshowAndMap">
+        <!-- THIS IS THE SLIDESHOW -->
+        
+            <div id="SlideshowAndMap">
             <figure>
                 <img class="SlideshowMap" src="images/map1.jpg" alt="Welcome to Formula 1 City"> 
                 <img class="SlideshowMap" src="images/ds3.jpg"  alt="Welcome to Formula 1 City"> 
@@ -46,60 +47,80 @@
 			<h2 id="Welcome">
 				Welcome to the turbo-charged world of F1 here at Formula 1 City!
 			</h2>
-        </div>
-      
-        <!-- Changes start here -->
-        <div id="MainContents">
-
-            <h2> Attractions and Events Information </h2> 
-            <div id="AttractionsAndEvents">
-                <a href="attractionsandevents.html">
-                    <div class="row">
-                        <div class="column">
-                          <img src="images/ds1.jpg" class="image">
-                          <div class="overlay">
-                          <div class="text">Click to find out more about our attractions and events</div>
-                        </div>
-                        </div>
-                      
-                        <div class="column">
-                          <img src="images/gk1.jpg" class="image">
-                          <div class="overlay">
-                          <div class="text">Click to find out more about our attractions and events</div>
-                        </div>
-                        </div>
-                      
-                        <div class="column">
-                          <img src="images/ms1.jpg" class="image">
-                          <div class="overlay">
-                          <div class="text">Click to find out more about our attractions and events</div>
-                        </div>
-                        </div>
-                      </div>
-                </a>
             </div>
-
-            <h2> Information and Services </h2> 
-            <div id="InformationAndServices">
-                <a href="informationandservices.html">
-                    <div class="container">
-                        <img id="InfoServeImg" src="images/dn1.jpg" alt="Press for information and services">
-                        <div class="overlay">
-                        <div class="text">Click to find out more about our information and services</div>
-                      </div>
-                      </div>
-                </a>
-            </div>
-        </div>
-        <!-- Changes end here -->
       
-        <footer>
             
-            <div id="SocialFooter">
-                <a href="www.facebook.com/F1City"><img id="FBLOGO" src= "images/fb.PNG" alt="Facebook Link"></a>
-                <a href="www.instagram.com/F1City"><img id="INSTALOGO" src= "images/ig.PNG" alt="Instagram Link"></a>
-            </div>
+            <div id="MainContents">
 
+                <h2> Attractions and Events Information </h2> 
+                <div id="AttractionsAndEvents">
+                    <a href="attractionsandevents.html">
+                        <div class="row">
+                            <div class="column">
+                              <img src="images/ds1.jpg" class="image">
+                              <div class="overlay">
+                              <div class="text">Click to find out more about our attractions and events</div>
+                            </div>
+                            </div>
+
+                            <div class="column">
+                              <img src="images/gk1.jpg" class="image">
+                              <div class="overlay">
+                              <div class="text">Click to find out more about our attractions and events</div>
+                            </div>
+                            </div>
+
+                            <div class="column">
+                              <img src="images/ms1.jpg" class="image">
+                              <div class="overlay">
+                              <div class="text">Click to find out more about our attractions and events</div>
+                            </div>
+                            </div>
+                          </div>
+                    </a>
+                </div>
+
+                <h2> Information and Services </h2> 
+                <div id="InformationAndServices">
+                    <a href="informationandservices.html">
+                        <div class="container">
+                            <img id="InfoServeImg" src="images/dn1.jpg" alt="Press for information and services">
+                            <div class="overlay">
+                            <div class="text">Click to find out more about our information and services</div>
+                          </div>
+                          </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+        <p class="notif">Receive Notifications on Upcoming Events and Offers!</p>
+            <div>
+                <form>
+                    <input type="email" required>
+                    <input type="submit" value="Sign Up">
+                </form>
+            </div>
+            
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="attractionsandevents.html">Attractions</a></li>
+                <li><a href="informationandservices.html">Information</a></li>
+                <li><a href="https://www.linkedin.com/in/dys-profile/">Check Us Out</a></li>
+            </ul>
+            
+            <div class = "social-footer">
+                <a href="www.instagram.com/F1City"><img id="INSTALOGO" src= "images/ig.PNG" alt="Instagram Link"></a>
+                <a href="www.twitter.com/F1City"><img id="TWITTERLOGO" src= "images/twitter.PNG" alt="Twitter Link"></a>
+                <a href="www.facebook.com/F1City"><img id="FBLOGO" src= "images/fb.PNG" alt="Facebook Link"></a>
+                <a href="www.youtube.com/F1City"><img id="YOUTUBELOGO" src= "images/youtube.PNG" alt="YouTube Link"></a>
+            </div>
+        </footer>
+        
+        
+        <!-- Changes end here -->
+        <!--
             <div id="InfoFooter">
                 <address> F1 City, Colchester Road, Colchester, CO6 3JY </address>
                 <p> Email: 
@@ -109,10 +130,7 @@
                     <a href="tel:+441206546545">01206 546545</a>
                 </p>
                 <p>F1 City© 2020</p>
-            </div>
-            
-        </footer>
-        
+            </div> -->
      </body>
     
 </html>
