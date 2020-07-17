@@ -342,14 +342,15 @@ footer ul li a:hover
 }
 
 /* --------- Main ------------- */
+
 #MainContents {
 	margin: auto;
 	text-align: center;
 }
 
 #InfoServeImg{
+    display: block;
     width: 100%;
-    margin-bottom: 0px;
 }
 
 .row {
