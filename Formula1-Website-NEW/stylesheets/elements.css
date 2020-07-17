@@ -1,0 +1,272 @@
+* 
+{ /* so that the white spacing on top is removed */
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.flex-container
+{
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+}
+
+/* -------------------------------------HEADER----------------------------------------------------- */
+header
+{ /* create the header for use */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    background-color: #8B0000;
+}
+
+.logo img
+{ /* shift the logo and change size */
+    padding-left: 50px;
+    height: 100%;
+    width: 180px;
+    cursor: pointer;
+    margin-right: auto;
+}
+
+nav ul
+{
+    list-style: none
+}
+
+nav ul li
+{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+nav ul li a
+{
+    color: white;
+    font-size: 20px;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+
+nav ul li a:hover, nav ul li a:active
+{ /* change the background colour on mouse over the button */ 
+    background: #DDD;
+    color: black;
+}
+
+button
+{ /* create the button to buy the tickets */
+    padding: 9px 25px;
+    background-color: #00cc00;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover
+{ /* change the background colour on mouse over the button */ 
+    background: #DDD;
+    color: black;
+}
+
+
+/* -------------------------------------FOOTER----------------------------------------------------- */
+footer 
+{ /* create the spacing for the footer */
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background: #8B0000;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+}
+
+.notif 
+{ /* create the heading on top of the subscribe box */
+    font-size: 25px;
+    font-weight: bold;
+    margin: 40px auto;
+}
+
+/* ---------------- the email portion ------------------> */
+footer input[type='email']
+{ /* subscribe here form for the left side of the bar */
+    width: 60vw;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 40px 0 0 40px;
+    outline: none;
+    border: none;
+}
+
+footer input[type='submit']
+{ /* for the right side of the submit bar */
+    border: none;
+    outline: none;
+    border-radius: 0 40px 40px 0;
+    padding: 10px;
+    color: #fff;
+    background: #00cc00;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+footer input:hover[type='submit'] 
+{ /* so that the icons will hover when placed over it */ 
+    background: #ccff99;
+}
+/* ---------------- the tabs in the footer ------------------> */
+footer ul li
+{
+    margin: 40px auto;
+    display: inline-block;
+    list-style-type: none;
+}
+footer ul li a 
+{ /* give the tabs some decoration */
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+footer ul li a:hover
+{ /* so that the list has hovering effects */
+    background: #DDD;
+    color: black;
+}
+
+/* ---------------- when downsizing window adjust these --------------- */
+@media(max-width:952px)
+{
+    .notif
+    { /* for the footer header */
+        font-size: 20px;
+    }
+    
+    footer input[type='email'], footer input[type='submit'] 
+    { /* for the footer form */
+        font-size: 20px;
+    }
+    
+    footer ul li a 
+    { /* for the footer links */
+        padding: 15px;
+        font-size: 15px;
+    }
+}
+
+@media(max-width:780px)
+{
+    .notif 
+    { /* for the footer header */
+        font-size: 16px;
+        margin: 30px;
+    }
+    
+    footer input[type='email'], footer input[type='submit'] 
+    { /* for the footer form */
+        font-size: 14px;
+    }
+    
+    footer ul li a 
+    { /* for the footer links */
+        padding: 10px;
+        font-size: 12px;
+    }
+    
+    header
+    {
+        flex-direction: column;
+    }
+    
+    button
+    {
+        display: none;
+    }
+    
+    nav ul
+    {
+        display: inline-block;
+        padding: 0px 20px;
+        margin-left: 100px;
+    }
+}
+
+@media(max-width:600px){
+    .notif 
+    { /* for the footer header */
+        font-size: 15px;
+        margin: 30px;
+    }
+    footer ul li a 
+    { /* for the footer links */
+        padding: 5px;
+    }
+    nav ul
+    {
+        display: inline-flex;
+        margin-right: 40px;
+        
+    }
+}
+
+@media(max-width:352px){
+    .notif 
+    { /* for the footer header */
+        font-size: 10px;
+    }
+}
+/* --------- the logos ------------- */
+#FBLOGO 
+{ /* facebook logo */
+	margin: center;
+	margin-top: 10px;
+	height: 2.5em;
+	width: 2.5em;
+    padding: 5px;
+}
+ 
+#INSTALOGO 
+{ /* instagram logo */
+	margin: center;
+	margin-top: 10px;
+	height: 2.5em;
+	width: 2.5em;
+    padding: 5px;
+ }
+
+#TWITTERLOGO 
+{ /* twitter logo */
+	margin: center;
+	margin-top: 10px;
+	height: 2.5em;
+	width: 2.5em;
+    padding: 5px;
+ }
+
+#YOUTUBELOGO 
+{ /* youtube logo */
+	margin: center;
+	margin-top: 10px;
+	height: 2.5em;
+	width: 2.5em;
+    padding: 5px;
+ }
+
+
+
+
+
