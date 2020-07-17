@@ -8,12 +8,12 @@
 </head>
 <body>
     <div id = "flex-container">
-        
+
         <!-- ---------------CREATE THE HEADER NOW---------------- -->
         <header>
             <!-- THE LOGO ON THE LEFT -->
             <a href = "index.html" class = "logo"><img src = "images/Logo.PNG" alt = "F1 City Logo"></a>
-            
+
             <nav>
                 <!-- THE LINKS ON THE RIGHT -->
                 <ul>
@@ -23,27 +23,43 @@
                 </ul>
             </nav>
             <a class = "button1" href = "information.html"><button>Buy Tickets</button></a>
-        </header>    
-            
-        
+        </header>
+
+
         <div id = "contentwrap">
-            <!-- all other page content -->    
+            <!-- all other page content -->
 
 
-            <div id="SlideshowAndMap">
-                <figure>
-                    <img class="SlideshowAndMap" src="images/image3.png" alt="Welcome to Formula 1 City">
-                    <img class="SlideshowAndMap" src="images/image2.png"  alt="Welcome to Formula 1 City"> 
-                    <img class="SlideshowAndMap" src="images/image1.png" alt="Welcome to Formula 1 City"> 
-                </figure>
-                <h2 id="Welcome">
+            <div id="slideshow">
+				<h2 id="Welcome">
                     Welcome to the turbo-charged world of F1 here at Formula 1 City!
                 </h2>
+                <figure>
+					<div class="slideshow-item">
+						<img src="images/image1.png" alt="Welcome to Formula 1 City Slide">
+						<div class="slideshow-item-text">
+							<h5>Experience The Thrill</h5>
+						</div>
+					</div>
+                    <div class="slideshow-item">
+						<img src="images/image2.png"  alt="Welcome to Formula 1 City Slide">
+						<div class="slideshow-item-text">
+							<h5>Satisfy Your Need For Speed</h5>
+						</div>
+					</div>
+					<div class="slideshow-item">
+						<img src="images/image3.png" alt="Welcome to Formula 1 City Slide">
+						<div class="slideshow-item-text">
+							<h5>Excitement Awaits</h5>
+						</div>
+					</div>
+                </figure>
+
             </div>
 
             <br>
             <div id="MainContents">
-                <h2> Attractions and Events Information </h2> 
+                <h2> Attractions and Events Information </h2>
                 <div id="AttractionsAndEvents">
                     <a href="attractionsandevents.html">
                         <div class="row">
@@ -53,7 +69,7 @@
                                 <div class="text">Click to find out more about our F1 Racing Simulator</div>
                                 </div>
                             </div>
-                            
+
                             <div class="column">
                                 <img src="images/gk1.jpg">
                                 <div class="overlay">
@@ -73,7 +89,7 @@
 
                 <br>
                 <br>
-                <h2> Information and Services </h2> 
+                <h2> Information and Services </h2>
                 <div id="InformationAndServices">
                     <a href="informationandservices.html">
                         <div class="container">
@@ -88,17 +104,17 @@
 
 
         </div>
-        
+
         <!-- ---------------CREATE THE FOOTER NOW---------------- -->
         <footer>
         <p class="notif">Receive Notifications on Upcoming Events and Offers!</p>
-        
+
         <!-- SUBSCRIBE NOW ON THE FOOTER -->
         <form>
             <input type="email" required>
             <input type="submit" value="Sign Up">
         </form>
-        
+
         <!-- LINKS ON THE FOOTER -->
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -106,7 +122,7 @@
             <li><a href="information.html">Information</a></li>
             <li><a href="https://www.linkedin.com/in/dys-profile/">Check Us Out</a></li>
         </ul>
-            
+
         <!-- SOCIAL MEDIA LINKS ON THE FOOTER -->
         <div>
             <a href="www.instagram.com/F1City"><img id="INSTALOGO" src= "images/ig.PNG" alt="Instagram Link"></a>
@@ -114,8 +130,8 @@
             <a href="www.facebook.com/F1City"><img id="FBLOGO" src= "images/fb.PNG" alt="Facebook Link"></a>
             <a href="www.youtube.com/F1City"><img id="YOUTUBELOGO" src= "images/youtube.PNG" alt="YouTube Link"></a>
         </div>
-        </footer>   
+        </footer>
     </div>
-    
+
 </body>
 </html>
