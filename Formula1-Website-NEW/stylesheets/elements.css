@@ -1,4 +1,4 @@
-* 
+*
 { /* so that the white spacing on top is removed */
     margin: 0;
     padding: 0;
@@ -11,7 +11,7 @@
 
 .flex-container
 {
-    position: relative; 
+    position: relative;
     display: flex;
     flex-direction: column;
 }
@@ -27,35 +27,35 @@
 		letter-spacing: .5px;
 		font-size: 23px;
  }
- 
+
  h2 {
 		font-family: 'Coolvetica Regular';
 		letter-spacing: .5px;
 		font-size: 20px
  }
- 
+
  h3 {
 		font-family: 'Coolvetica Regular';
 		letter-spacing: .5px;
 		font-size: 17px
  }
- 
+
  p {
 		font-family: 'Coolvetica Regular';
 		letter-spacing: .5px;
 		font-size: 15px
  }
- 
+
  a {
 		font-family: 'Coolvetica Regular';
 		letter-spacing: .5px;
 		font-size: 15px;
  }
- 
+
  address {
 		font-family: 'Coolvetica Regular';
 		letter-spacing: .5px;
-		font-size: 15px;		
+		font-size: 15px;
 		align-items: center;
  }
 
@@ -99,7 +99,7 @@ nav ul li a
 }
 
 nav ul li a:hover, nav ul li a:active
-{ /* change the background colour on mouse over the button */ 
+{ /* change the background colour on mouse over the button */
     background: #DDD;
     color: black;
 }
@@ -114,14 +114,14 @@ button
 }
 
 button:hover
-{ /* change the background colour on mouse over the button */ 
+{ /* change the background colour on mouse over the button */
     background: #DDD;
     color: black;
 }
 
 
 /* -------------------------------------FOOTER----------------------------------------------------- */
-footer 
+footer
 { /* create the spacing for the footer */
     width: 100%;
     position: relative;
@@ -135,7 +135,7 @@ footer
     padding: 20px;
 }
 
-.notif 
+.notif
 { /* create the heading on top of the subscribe box */
     font-size: 25px;
     font-weight: bold;
@@ -165,8 +165,8 @@ footer input[type='submit']
     cursor: pointer;
 }
 
-footer input:hover[type='submit'] 
-{ /* so that the icons will hover when placed over it */ 
+footer input:hover[type='submit']
+{ /* so that the icons will hover when placed over it */
     background: #ccff99;
 }
 /* ---------------- the tabs in the footer ------------------> */
@@ -176,7 +176,7 @@ footer ul li
     display: inline-block;
     list-style-type: none;
 }
-footer ul li a 
+footer ul li a
 { /* give the tabs some decoration */
     text-decoration: none;
     color: #fff;
@@ -198,13 +198,13 @@ footer ul li a:hover
     { /* for the footer header */
         font-size: 20px;
     }
-    
-    footer input[type='email'], footer input[type='submit'] 
+
+    footer input[type='email'], footer input[type='submit']
     { /* for the footer form */
         font-size: 20px;
     }
-    
-    footer ul li a 
+
+    footer ul li a
     { /* for the footer links */
         padding: 15px;
         font-size: 15px;
@@ -213,33 +213,33 @@ footer ul li a:hover
 
 @media(max-width:780px)
 {
-    .notif 
+    .notif
     { /* for the footer header */
         font-size: 16px;
         margin: 30px;
     }
-    
-    footer input[type='email'], footer input[type='submit'] 
+
+    footer input[type='email'], footer input[type='submit']
     { /* for the footer form */
         font-size: 14px;
     }
-    
-    footer ul li a 
+
+    footer ul li a
     { /* for the footer links */
         padding: 10px;
         font-size: 12px;
     }
-    
+
     header
     {
         flex-direction: column;
     }
-    
+
     button
     {
         display: none;
     }
-    
+
     nav ul
     {
         display: inline-block;
@@ -249,12 +249,12 @@ footer ul li a:hover
 }
 
 @media(max-width:600px){
-    .notif 
+    .notif
     { /* for the footer header */
         font-size: 15px;
         margin: 30px;
     }
-    footer ul li a 
+    footer ul li a
     { /* for the footer links */
         padding: 5px;
     }
@@ -262,18 +262,18 @@ footer ul li a:hover
     {
         display: inline-flex;
         margin-right: 40px;
-        
+
     }
 }
 
 @media(max-width:352px){
-    .notif 
+    .notif
     { /* for the footer header */
         font-size: 10px;
     }
 }
 /* --------- the logos ------------- */
-#FBLOGO 
+#FBLOGO
 { /* facebook logo */
 	margin: center;
 	margin-top: 10px;
@@ -281,8 +281,8 @@ footer ul li a:hover
 	width: 2.5em;
     padding: 5px;
 }
- 
-#INSTALOGO 
+
+#INSTALOGO
 { /* instagram logo */
 	margin: center;
 	margin-top: 10px;
@@ -291,7 +291,7 @@ footer ul li a:hover
     padding: 5px;
  }
 
-#TWITTERLOGO 
+#TWITTERLOGO
 { /* twitter logo */
 	margin: center;
 	margin-top: 10px;
@@ -300,7 +300,7 @@ footer ul li a:hover
     padding: 5px;
  }
 
-#YOUTUBELOGO 
+#YOUTUBELOGO
 { /* youtube logo */
 	margin: center;
 	margin-top: 10px;
@@ -439,7 +439,7 @@ footer ul li a:hover
 	.slideshow-item-text h5{
 		font-size: 2rem;
 	}
-	
+
 }
 /* --------- Main ------------- */
 
@@ -457,20 +457,20 @@ footer ul li a:hover
     display: flex;
     margin: 0px;
 }
-  
+
 .column {
 	flex: 25%;
 	max-width: 33.33%;
 	position: relative;
 }
-  
+
 .column img {
 	margin-top: 0px;
     display: block;
     width: 100%;
     height: 450px;
 }
-  
+
 .overlay {
   position: absolute;
   top: 0;
@@ -510,7 +510,104 @@ footer ul li a:hover
     margin-bottom: 0px;
 }
 
-.container:hover .overlay {
+.container:hover .overlay
+{
 	opacity: 1;
 	height: 100%;
-  }
+}
+
+/* --------------------------- ATTRACTIONS PAGE -------------------------- */
+
+/* -----------This is for the Header ---------- */
+.content-wrapper
+{
+    width: 100%;
+}
+
+.content-wrapper img
+{
+    width: 100%;
+    opacity: 0.6;
+}
+
+.text-wrapper
+{
+    width: 100%;
+    position: absolute;
+    margin-top: -20%
+}
+
+.text-wrapper h1
+{
+    text-align: center;
+    color: #000000;
+    font-size: 6vw;
+}
+
+/* ---------------- This is for the 2 Events -------------- */
+.eventcontainer
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.eventcontainer .eventcard
+{
+    position: relative;
+    max-width: 450px;
+    background: #8B0000;
+    margin: 10px;
+    padding: 15px;
+    display: flex;
+}
+
+.eventcontainer .eventcard .imagebox
+{
+    max-width: 150px;
+    flex: 0 0 150px;
+}
+
+.eventcontainer .eventcard .imagebox img
+{
+    max-width: 100%;
+}
+
+.eventcontainer .eventcard .contentbox
+{
+    margin-left: 20px;
+}
+
+@media (max-width: 991px)
+{
+    .eventcontainer
+    {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px)
+{
+    .eventcontainer
+    {
+        flex-direction: column;
+    }
+    .eventcontainer .eventcard
+    {
+        flex-direction: column;
+        max-width: 350px;
+    }
+
+    .eventcontainer .eventcard .imagebox
+    {
+        max-width:100%;
+    }
+
+    .eventcontainer .eventcard .contentbox
+    {
+        margin-left: 0px;
+    }
+}
