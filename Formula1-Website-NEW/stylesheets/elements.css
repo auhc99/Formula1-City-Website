@@ -350,7 +350,8 @@ footer ul li a:hover
 } */
 
 
-#Welcome{
+#Welcome
+{
 	text-align: center;
 	display: absolute;
 	font-family: Arial, Helvetica, sans-serif;
@@ -359,7 +360,8 @@ footer ul li a:hover
 	color: #fff;
 }
 
-.slideshow-item {
+.slideshow-item 
+{
 	width: 100%;
 	height: 100%;
 	position: absolute;
@@ -370,7 +372,8 @@ footer ul li a:hover
 
 }
 
-.slideshow-item img {
+.slideshow-item img 
+{
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
@@ -378,19 +381,23 @@ footer ul li a:hover
 }
 
 .slideshow-item:nth-child(1),
-.slideshow-item:nth-child(1) img{
+.slideshow-item:nth-child(1) img
+{
 	animation-delay: 0s;
 }
 .slideshow-item:nth-child(2),
-.slideshow-item:nth-child(1) img {
+.slideshow-item:nth-child(1) img 
+{
 	animation-delay: 10s;
 }
 .slideshow-item:nth-child(3),
-.slideshow-item:nth-child(1) img {
+.slideshow-item:nth-child(1) img 
+{
 	animation-delay: 20s;
 }
 
-.slideshow-item-text {
+.slideshow-item-text 
+{
 	max-width: 50%;
 	position: absolute;
 	bottom: 0;
@@ -401,7 +408,8 @@ footer ul li a:hover
 	padding: 20px 10px;
 }
 
-.slideshow-item-text h5 {
+.slideshow-item-text h5 
+{
 	font-size: 3rem;
 	font-family: Arial, Helvetica, sans-serif;
 	text-transform: uppercase;
@@ -417,7 +425,8 @@ footer ul li a:hover
 	}
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 780px) 
+{
 
 	.slideshow-item-text{
 		max-width: 100%;
@@ -431,7 +440,8 @@ footer ul li a:hover
 	}
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1000px) 
+{
 	.slideshow-item-text{
 		max-width: 70%;
 		padding: 20px 10px;
@@ -443,36 +453,103 @@ footer ul li a:hover
 }
 /* --------- Main ------------- */
 
-#MainContents {
+#MainContents 
+{
 	margin: auto;
 	text-align: center;
 }
 
-#InfoServeImg{
+#InfoServeImg
+{
     display: block;
     width: 100%;
-    height: 1000px;
+    height: 500px;
 }
 
-.row {
+.row 
+{
     display: flex;
     margin: 0px;
 }
 
-.column {
+.column 
+{
 	flex: 25%;
 	max-width: 33.33%;
 	position: relative;
 }
 
-.column img {
+.column img 
+{
 	margin-top: 0px;
     display: block;
     width: 100%;
     height: 450px;
 }
 
-.overlay {
+@media(max-width:1300px)
+{
+    #InfoServeImg
+    {
+        display: block;
+        width: 100%;
+        height: 375px;
+    }
+}
+@media(max-width:900px)
+{
+    #InfoServeImg
+    {
+        display: block;
+        width: 100%;
+        height: 300px;
+    }
+}
+
+@media(max-width: 750px)
+{
+    .row 
+    {
+        display: flex;
+        margin: 0px;
+        flex-direction: column;
+    }
+    .column 
+    {   
+	   flex: 25%;
+	   max-width: 100%;
+	   position: relative;
+    }
+}
+
+
+
+
+@media(max-width:600px)
+{
+    #InfoServeImg
+    {
+        display: block;
+        width: 100%;
+        height: 225px;
+    }
+    
+}
+
+@media(max-width:400px)
+{
+    #InfoServeImg
+    {
+        display: block;
+        width: 100%;
+        height: 150px;
+    }
+    
+}
+
+
+.overlay 
+{
   position: absolute;
   top: 0;
   bottom: 0;
@@ -485,11 +562,13 @@ footer ul li a:hover
   background-color:rgba(156, 156, 156, 0.8);
 }
 
-.column:hover .overlay {
+.column:hover .overlay 
+{
   opacity: 1;
 }
 
-.text {
+.text 
+{
   color: black;
   font-size: 20px;
   position: absolute;
@@ -502,14 +581,12 @@ footer ul li a:hover
   border-radius: 15px;
 }
 
-.container {
+.container 
+{
 	flex: 25%;
 	margin-left: auto;
   	margin-right: auto;
 	position: relative;
-    width: 100%;
-    margin-bottom: 0px;
-    height: 1000px;
 }
 
 .container:hover .overlay
@@ -583,7 +660,7 @@ footer ul li a:hover
     margin-left: 20px;
 }
 
-@media (max-width: 991px)
+@media (max-width: 800px)
 {
     .eventcontainer
     {
@@ -591,7 +668,7 @@ footer ul li a:hover
     }
 }
 
-@media (max-width: 768px)
+@media (max-width: 700px)
 {
     .eventcontainer
     {
@@ -612,4 +689,58 @@ footer ul li a:hover
     {
         margin-left: 0px;
     }
+}
+
+/* CARDS FOR THE ATTRACTION PAGE -------------------------- */
+.card {
+  display: grid;
+  grid-template-columns: 300px;
+  grid-template-rows: 210px 210px 80px;
+  grid-template-areas: "image" "text" "stats";
+  border-radius: 18px;
+  background: white;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+  font-family: roboto;
+  text-align: center;
+}
+
+.card-image {
+  grid-area: image;
+}
+.card-text {
+  grid-area: text;
+}
+
+.card-image {
+  grid-area: image;
+background: "images/ds1";
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+}
+
+.card-text {
+  grid-area: text;
+  margin: 25px;
+}
+
+.card-text p {
+  color: grey;
+  font-size:15px;
+  font-weight: 300;
+}
+.card-text h2 {
+  margin-top:0px;
+  font-size:28px;
+}
+
+.card:hover {
+  transform: scale(1.15);
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
+.card {
+...
+  transition: 0.5s ease;
+  cursor: pointer;
+  margin:30px;
 }
