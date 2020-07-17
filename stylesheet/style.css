@@ -91,28 +91,6 @@ body{
 }
 
 
-/* Header CSS -------------------------------- */
-
-header {
-		margin: auto;
-                margin-bottom: 10px;
-		text-align: center;
-		border-bottom-style: solid;
-		border-bottom-color: #FFD500;
-		background-color: #ff2800;
-}
-
-head {
-	margin: auto;
-	background-color: #ff2800;
-}
-
-#logo {
-	height: 5em;
-	
-}
-
-
 /* Index.html formatting -------------------------------- */
 
 	/* slideshow  */
@@ -229,6 +207,12 @@ head {
 	height: 100%;
   }
 
+#page-container
+{
+    position:relative;
+    min-height: 100vh;
+}
+
 
 /* attractionsandevents.html formatting -------------------------------- */
 
@@ -342,35 +326,6 @@ ul{
 
 
 
-/* Footer Formatting -------------------------------- */
-
-div#SocialFooter {
-		border-top-style: solid;
-		border-top-color: #FFD500;
-		margin: center;
-		text-align: center;
-		background-color: #ff2800;
-}
-
-#FBLOGO {
-	margin: center;
-	margin-top: 10px;
-	height: 2.5em;
-	width: 2.5em;
- }
- 
- #INSTALOGO {
-	margin: center;
-	margin-top: 10px;
-	height: 2.5em;
-	width: 2.5em;
- }
-
-div#InfoFooter {
-	margin: auto;
-	text-align: center;
-	background-color:  #ff2800;
-}
 
 
 
