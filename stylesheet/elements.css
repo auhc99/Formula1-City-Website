@@ -1,0 +1,277 @@
+
+
+/* ------------------ HEADER HERE -------------------- */
+
+* 
+{ /* so that the white spacing on top is removed */
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+nav
+{ /* style the header with the red colour and padding */
+    background-color: #8B0000;
+    width: 100%;
+    height: 80px;
+}
+
+nav ul
+{ /* style the header links and float it to the right */
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li
+{ /* align the elements in a row */
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a
+{ /* edit the design of the tabs */
+    color: white;
+    font-size: 20px;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+
+a.active, a:hover
+{ /* change the background colour on mouse over the button */ 
+    background: #DDD;
+    color: black;
+}
+
+a.logo img
+{ /* shift the logo and change size */
+    padding-left: 50px;
+    height: 100%;
+    width: 180px;
+}
+
+a.logo:hover
+{ /* remove the background colour when hovering over image */
+    background: none;
+}
+
+.checkbtn
+{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check
+{
+    display: none
+}
+
+@media (max-width: 952px)
+{ /* adjust the responsiveness of the navbar for tablet size */
+    nav ul li a
+    {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 852px)
+{ /* adjust the responsiveness of the navbar for phone size THERE ARE SOME BUGS */
+    .checkbtn
+    {
+        display: block;
+    }
+    
+    ul
+    {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: 0;
+        text-align: center;
+    }
+    
+    nav ul li
+    {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    
+    nav ul li a
+    {
+        font-size: 20px;
+    }
+    
+    a:hover, a.ac
+    {
+        background: none;
+        color: #0082E6
+    }
+    
+    #check:checked ~ ul
+    {
+        left: 0;
+    }
+}
+
+
+/* ------------------ FOOTER HERE -------------------- */
+
+footer 
+{ /* create a footer background */
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background: #8B0000;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 30px;
+    flex-direction: column;
+    display: flex;
+}
+
+footer ul li
+{ /* this is to give the words size */
+    font-size: 25px;
+    font-weight: bold;
+    margin: 40px auto;
+    display: inline-block;
+}
+
+footer ul li a
+{ /* this is to give the words size */
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.notif
+{
+    font-size: 28px;
+    font-weight: bold;
+    margin: 30px auto;   
+}
+
+@media(max-width:610px)
+{
+    .notif
+    {
+        font-size: 14px;
+    }
+    
+    /* subscribe forms */
+    footer input[type='email'], footer input[type='submit'] 
+    {
+        font-size: 14px;
+    }
+    
+    footer ul li a
+    {
+        padding: 10px;
+        font-size: 12px;
+    }
+}
+@media(max-width:470px)
+{
+    .notif
+    {
+        font-size: 12px;
+    }
+    
+    footer ul li a
+    {
+        padding: 10px;
+        font-size: 10px;
+    }
+}
+@media(max-width:330px)
+{
+    .notif
+    {
+        font-size: 10px;
+    }
+}
+
+
+/* -------------- subscribe here form ----------- */
+
+footer input[type='email']
+{ /* subscribe here form for the left side of the bar */
+    width: 60vw;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 40px 0 0 40px;
+    outline: none;
+    border: none;
+}
+
+footer input[type='submit']
+{ /* for the right side of the submit bar */
+    border: none;
+    outline: none;
+    border-radius: 0 40px 40px 0;
+    padding: 10px;
+    color: #fff;
+    background: #00cc00;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+footer input:hover[type='submit'] 
+{
+    background: #ccff99;
+}
+
+/* ------------- LOGO Formatting --------------------- */
+
+#FBLOGO {
+	margin: center;
+	margin-top: 10px;
+	height: 2.5em;
+	width: 2.5em;
+    padding: 5px;
+ }
+ 
+#INSTALOGO {
+	margin: center;
+	margin-top: 10px;
+	height: 2.5em;
+	width: 2.5em;
+    padding: 5px;
+ }
+
+#TWITTERLOGO {
+	margin: center;
+	margin-top: 10px;
+	height: 2.5em;
+	width: 2.5em;
+    padding: 5px;
+ }
+
+#YOUTUBELOGO {
+	margin: center;
+	margin-top: 10px;
+	height: 2.5em;
+	width: 2.5em;
+    padding: 5px;
+ }
+
+div#InfoFooter {
+	margin: auto;
+	text-align: center;
+	background-color:  #ff2800;
+}
